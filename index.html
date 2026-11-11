@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals Aroma | Fresh Homemade Meals & Platters in Pretoria East</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FAF7F2; color: #2D3748; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .brand-pink { color: #C72C6B; }
+        .bg-brand-pink { background-color: #C72C6B; }
+        .border-brand-pink { border-color: #C72C6B; }
+        .brand-green { color: #2E6F40; }
+        .bg-brand-green { background-color: #2E6F40; }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(199, 44, 107, 0.1), 0 10px 10px -5px rgba(199, 44, 107, 0.04); }
+    </style>
+</head>
+<body class="bg-[#FAF7F2] text-slate-800 antialiased selection:bg-rose-200 selection:text-rose-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-green text-white text-xs md:text-sm py-2 px-4 text-center font-medium tracking-wide">
+        <i class="fa-solid fa-clock mr-2"></i> Mon – Fri Dinner Delivery (5:30 PM – 7:00 PM) | Pretoria East Only <i class="fa-solid fa-heart text-pink-300 ml-1"></i>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-rose-200/60 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-brand-pink font-bold text-xl border-2 border-rose-300 shadow-inner">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-serif font-bold brand-pink tracking-tight">Meals Aroma</span>
+                    <span class="block text-xs text-slate-500 font-medium tracking-wider">Homemade with Love ♡</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-700 text-sm">
+                <a href="#menu" class="hover:text-brand-pink transition">Weekly Menu</a>
+                <a href="#platters" class="hover:text-brand-pink transition">Event Platters</a>
+                <a href="#checker" class="hover:text-brand-pink transition">Delivery Areas</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/27842462081?text=Hi%20Meals%20Aroma,%20I%20d%20like%20to%20see%20this%20week's%20menu!" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-md transition flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">084 246 2081</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-rose-100/40 via-transparent to-[#FAF7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center space-x-2 bg-rose-200/70 text-brand-pink px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-2xs">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Working Late? Dinner is Sorted!</span>
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-slate-900 leading-[1.15]">
+                        Fresh homemade meals <span class="brand-pink italic">just like home</span>.
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        No planning. No shopping. No cooking after a long day. Enjoy generous, comforting family-style dinners delivered straight to your door in Pretoria East.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#menu" class="w-full sm:w-auto bg-brand-pink hover:bg-pink-700 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition text-center">
+                            View This Week's Menu
+                        </a>
+                        <a href="#platters" class="w-full sm:w-auto bg-white hover:bg-rose-50 text-slate-800 border-2 border-rose-200 font-bold px-8 py-4 rounded-full transition text-center shadow-xs">
+                            Explore Event Platters
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white card-hover">
+                        <!-- Hero Image -->
+                        <div class="h-64 w-full overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80" alt="Fresh Home Cooked Meal" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                                <span class="text-white font-serif font-bold text-xl">Prepared Fresh Daily ♡</span>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4 bg-white">
+                            <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-brand-green font-bold text-xs"><i class="fa-solid fa-check"></i></div>
+                                <span>Fresh seasonal ingredients & quality meats</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-brand-green font-bold text-xs"><i class="fa-solid fa-check"></i></div>
+                                <span>Generous family-friendly portions</span>
+                            </div>
+                            <div class="pt-2">
+                                <a href="https://wa.me/27842462081?text=Hi%20Meals%20Aroma,%20I'd%20like%20to%20secure%20my%20meal%20booking!" target="_blank" class="block w-full text-center bg-brand-green hover:bg-emerald-800 text-white font-bold py-3.5 rounded-2xl shadow-md transition">
+                                    <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Book via WhatsApp Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white border-y border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-brand-pink font-bold uppercase tracking-wider text-xs bg-rose-100 px-3.5 py-1 rounded-full">Available Monday – Friday</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900">This Week's Gourmet Menu</h2>
+                <p class="text-slate-600">Delicious homestyle dinners prepared with quality ingredients and delivered hot to your door.</p>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-[#FAF7F2] rounded-3xl overflow-hidden border border-rose-200/70 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3d5d6281297?auto=format&fit=crop&w=600&q=80" alt="Creamy Chicken Pasta" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-brand-pink text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Monday</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-serif font-bold text-slate-900">Creamy Chicken Pasta</h3>
+                                <span class="font-serif font-bold brand-pink text-lg">R115</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">Tender grilled chicken strips tossed in a rich garlic, mushroom, and cream sauce served with penne pasta.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openOrderModal('Monday: Creamy Chicken & Mushroom Pasta', 'R115')" class="w-full bg-white hover:bg-rose-50 text-brand-pink border-2 border-brand-pink font-bold py-3 rounded-xl transition text-sm flex items-center justify-center space-x-2 shadow-2xs">
+                            <i class="fa-brands fa-whatsapp"></i><span>Order for Monday</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#FAF7F2] rounded-3xl overflow-hidden border border-rose-200/70 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1529692266277-56f990bacb6e?auto=format&fit=crop&w=600&q=80" alt="Beef Meatballs" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-brand-pink text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Tuesday</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-serif font-bold text-slate-900">Beef Meatballs & Mash</h3>
+                                <span class="font-serif font-bold brand-pink text-lg">R120</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">Juicy handcrafted beef meatballs in savory onion gravy, served with buttery mashed potatoes and carrots.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openOrderModal('Tuesday: Traditional Beef Meatballs & Mash', 'R120')" class="w-full bg-white hover:bg-rose-50 text-brand-pink border-2 border-brand-pink font-bold py-3 rounded-xl transition text-sm flex items-center justify-center space-x-2 shadow-2xs">
+                            <i class="fa-brands fa-whatsapp"></i><span>Order for Tuesday</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#FAF7F2] rounded-3xl overflow-hidden border border-rose-200/70 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=600&q=80" alt="Cottage Pie" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-brand-pink text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Wednesday</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-serif font-bold text-slate-900">Homestyle Cottage Pie</h3>
+                                <span class="font-serif font-bold brand-pink text-lg">R115</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">Savory minced beef and vegetable filling topped with fluffy mashed potatoes and golden cheddar cheese.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openOrderModal('Wednesday: Homestyle Cottage Pie', 'R115')" class="w-full bg-white hover:bg-rose-50 text-brand-pink border-2 border-brand-pink font-bold py-3 rounded-xl transition text-sm flex items-center justify-center space-x-2 shadow-2xs">
+                            <i class="fa-brands fa-whatsapp"></i><span>Order for Wednesday</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#FAF7F2] rounded-3xl overflow-hidden border border-rose-200/70 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Bobotie" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-brand-pink text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Thursday</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-serif font-bold text-slate-900">Beef Bobotie & Rice</h3>
+                                <span class="font-serif font-bold brand-pink text-lg">R125</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">Authentic Cape Malay spiced mince with egg custard topping, served with fragrant yellow turmeric rice.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openOrderModal('Thursday: Slow-Roasted Beef Bobotie', 'R125')" class="w-full bg-white hover:bg-rose-50 text-brand-pink border-2 border-brand-pink font-bold py-3 rounded-xl transition text-sm flex items-center justify-center space-x-2 shadow-2xs">
+                            <i class="fa-brands fa-whatsapp"></i><span>Order for Thursday</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-[#FAF7F2] rounded-3xl overflow-hidden border border-rose-200/70 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?auto=format&fit=crop&w=600&q=80" alt="Chicken Schnitzel" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-brand-pink text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Friday</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-serif font-bold text-slate-900">Crumbed Schnitzel</h3>
+                                <span class="font-serif font-bold brand-pink text-lg">R130</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">Golden crumbed chicken schnitzel with roasted root vegetables, potato wedges, and mushroom sauce.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openOrderModal('Friday: Crumbed Schnitzel & Roast Veg', 'R130')" class="w-full bg-white hover:bg-rose-50 text-brand-pink border-2 border-brand-pink font-bold py-3 rounded-xl transition text-sm flex items-center justify-center space-x-2 shadow-2xs">
+                            <i class="fa-brands fa-whatsapp"></i><span>Order for Friday</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6: Custom Notice -->
+                <div class="bg-gradient-to-br from-brand-pink to-pink-700 rounded-3xl p-6 text-white flex flex-col justify-between shadow-lg">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold">Dietary or Family Packs?</h3>
+                        <p class="text-pink-100 text-sm leading-relaxed">Looking for custom family portions or have questions about ingredients? Drop us a quick note on WhatsApp!</p>
+                    </div>
+                    <div class="pt-4">
+                        <a href="https://wa.me/27842462081?text=Hi%20Meals%20Aroma,%20I%20have%20an%20enquiry%20about%20your%20meals." target="_blank" class="block w-full text-center bg-white text-brand-pink font-bold py-3.5 rounded-xl shadow transition hover:bg-rose-50">
+                            Chat with Thea
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platters Section -->
+    <section id="platters" class="py-20 bg-[#FAF7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-rose-200/60 grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
+                <div class="lg:col-span-6 h-72 lg:h-full min-h-[320px] relative">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" alt="Event Platters" class="w-full h-full object-cover">
+                </div>
+                <div class="lg:col-span-6 p-8 lg:p-12 space-y-6">
+                    <span class="bg-emerald-100 text-brand-green px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-star mr-1"></i> Special Event Catering
+                    </span>
+                    <h2 class="text-3xl lg:text-4xl font-serif font-bold text-slate-900">
+                        Fresh Homemade Platters <span class="brand-pink italic">That Impress</span>
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        From corporate meetings and birthday parties to family gatherings and wedding celebrations. Let us take care of the food so you can enjoy the occasion without any kitchen stress.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium text-slate-700 pt-2">
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-green"></i><span>No cooking or shopping</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-green"></i><span>No dishes or clean-up</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-green"></i><span>Savory & sweet pastry options</span></div>
+                        <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-green"></i><span>Book 4–5 days in advance</span></div>
+                    </div>
+                    <div class="pt-4">
+                        <a href="https://wa.me/27842462081?text=Hi%20Meals%20Aroma,%20please%20send%20me%20your%20platter%20menu%20and%20pricing!" target="_blank" class="inline-flex items-center space-x-3 bg-brand-green hover:bg-emerald-800 text-white font-bold px-8 py-4 rounded-full shadow-lg transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Request Platter Price List</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Area Checker -->
+    <section id="checker" class="py-20 bg-white border-t border-rose-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-brand-pink font-bold uppercase tracking-wider text-xs bg-rose-100 px-3.5 py-1 rounded-full">Convenient Doorstep Drop-offs</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-3 mb-4">Pretoria East Delivery Areas</h2>
+            <p class="text-slate-600 mb-8 max-w-lg mx-auto">We deliver straight to your door across these designated suburbs:</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-12">
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Meyerspark</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">The Willows</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">La Montagne</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Murrayfield</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Die Wilgers</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Equestria</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Silver Lakes</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Wapadrand</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Faerie Glen</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Olympus</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Garsfontein</div>
+                <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-rose-200 font-medium text-slate-800 text-sm shadow-2xs">Lynnwood</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+            <div>
+                <span class="text-2xl font-serif font-bold text-rose-400">Meals Aroma</span>
+                <p class="text-slate-400 text-sm mt-2 leading-relaxed">Fresh homemade dinners & special event platters made with love in Pretoria East.</p>
+            </div>
+            <div class="text-center md:text-right md:col-span-2 space-y-3">
+                <p class="text-sm text-slate-300">Got questions or ready to secure your meal? Chat directly with Thea on WhatsApp:</p>
+                <a href="https://wa.me/27842462081" target="_blank" class="inline-flex items-center space-x-2 text-emerald-400 font-bold text-lg hover:underline">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>084 246 2081</span>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; 2026 Meals Aroma. Designed by CSDigital Agency. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-rose-100">
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-rose-50 text-slate-500 hover:text-brand-pink flex items-center justify-center font-bold transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="text-center mb-6">
+                <span class="bg-rose-100 text-brand-pink text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Quick Order</span>
+                <h3 id="modalMealTitle" class="text-2xl font-serif font-bold text-slate-900 mt-2">Meal Title</h3>
+                <p id="modalMealPrice" class="text-brand-pink font-bold text-lg mt-1">R0.00</p>
+            </div>
+            <form id="orderForm" onsubmit="submitOrder(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Your Name</label>
+                    <input type="text" id="clientName" required placeholder="e.g. Sarah van der Merwe" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-pink focus:outline-hidden text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Number of Portions</label>
+                    <input type="number" id="clientPortions" min="1" value="1" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-pink focus:outline-hidden text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Delivery Suburb (Pretoria East)</label>
+                    <input type="text" id="clientSuburb" required placeholder="e.g. Faerie Glen" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-pink focus:outline-hidden text-sm">
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-md transition flex items-center justify-center space-x-2 mt-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i><span>Send Order via WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let selectedMeal = '';
+        let selectedPrice = '';
+
+        function openOrderModal(meal, price) {
+            selectedMeal = meal;
+            selectedPrice = price;
+            document.getElementById('modalMealTitle').innerText = meal;
+            document.getElementById('modalMealPrice').innerText = price + ' / portion';
+            document.getElementById('orderModal').classList.remove('hidden');
+            document.getElementById('orderModal').classList.add('flex');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.remove('flex');
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        function submitOrder(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value;
+            const portions = document.getElementById('clientPortions').value;
+            const suburb = document.getElementById('clientSuburb').value;
+
+            const text = `Hi Meals Aroma, I would like to place an order!\n\n*Meal:* ${selectedMeal} (${selectedPrice})\n*Portions:* ${portions}\n*Name:* ${name}\n*Delivery Suburb:* ${suburb}`;
+            const encoded = encodeURIComponent(text);
+            window.open(`https://wa.me/27842462081?text=${encoded}`, '_blank');
+            closeOrderModal();
+        }
+    </script>
+</body>
+</html>
